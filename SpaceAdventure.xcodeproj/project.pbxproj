@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54694C881335E669002627E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54694C871335E669002627E3 /* UIKit.framework */; };
+		54694C8A1335E669002627E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54694C891335E669002627E3 /* Foundation.framework */; };
+		54694C8C1335E669002627E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54694C8B1335E669002627E3 /* CoreGraphics.framework */; };
+		54694C8E1335E669002627E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54694C8D1335E669002627E3 /* QuartzCore.framework */; };
+		54694C901335E669002627E3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54694C8F1335E669002627E3 /* OpenGLES.framework */; };
+		54694C961335E66A002627E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54694C941335E66A002627E3 /* InfoPlist.strings */; };
+		54694C991335E66A002627E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54694C981335E66A002627E3 /* main.m */; };
+		54694C9C1335E66A002627E3 /* SpaceAdventureAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54694C9B1335E66A002627E3 /* SpaceAdventureAppDelegate.m */; };
+		54694C9F1335E66A002627E3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54694C9D1335E66A002627E3 /* MainWindow.xib */; };
+		54694CA11335E66A002627E3 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 54694CA01335E66A002627E3 /* Shader.fsh */; };
+		54694CA31335E66A002627E3 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 54694CA21335E66A002627E3 /* Shader.vsh */; };
+		54694CA61335E66A002627E3 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54694CA51335E66A002627E3 /* EAGLView.m */; };
+		54694CA91335E66A002627E3 /* SpaceAdventureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54694CA81335E66A002627E3 /* SpaceAdventureViewController.m */; };
+		54694CAC1335E66A002627E3 /* SpaceAdventureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54694CAA1335E66A002627E3 /* SpaceAdventureViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54694C831335E669002627E3 /* SpaceAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54694C871335E669002627E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54694C891335E669002627E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54694C8B1335E669002627E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54694C8D1335E669002627E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		54694C8F1335E669002627E3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		54694C931335E66A002627E3 /* SpaceAdventure-Info.plist */ = {isa = PBXFileReference; path = "SpaceAdventure-Info.plist"; sourceTree = "<group>"; };
+		54694C951335E66A002627E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54694C971335E66A002627E3 /* SpaceAdventure-Prefix.pch */ = {isa = PBXFileReference; path = "SpaceAdventure-Prefix.pch"; sourceTree = "<group>"; };
+		54694C981335E66A002627E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54694C9A1335E66A002627E3 /* SpaceAdventureAppDelegate.h */ = {isa = PBXFileReference; path = SpaceAdventureAppDelegate.h; sourceTree = "<group>"; };
+		54694C9B1335E66A002627E3 /* SpaceAdventureAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceAdventureAppDelegate.m; sourceTree = "<group>"; };
+		54694C9E1335E66A002627E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		54694CA01335E66A002627E3 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		54694CA21335E66A002627E3 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		54694CA41335E66A002627E3 /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
+		54694CA51335E66A002627E3 /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		54694CA71335E66A002627E3 /* SpaceAdventureViewController.h */ = {isa = PBXFileReference; path = SpaceAdventureViewController.h; sourceTree = "<group>"; };
+		54694CA81335E66A002627E3 /* SpaceAdventureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceAdventureViewController.m; sourceTree = "<group>"; };
+		54694CAB1335E66A002627E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SpaceAdventureViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54694C801335E669002627E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54694C881335E669002627E3 /* UIKit.framework in Frameworks */,
+				54694C8A1335E669002627E3 /* Foundation.framework in Frameworks */,
+				54694C8C1335E669002627E3 /* CoreGraphics.framework in Frameworks */,
+				54694C8E1335E669002627E3 /* QuartzCore.framework in Frameworks */,
+				54694C901335E669002627E3 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54694C781335E669002627E3 = {
+			isa = PBXGroup;
+			children = (
+				54694C911335E66A002627E3 /* SpaceAdventure */,
+				54694C861335E669002627E3 /* Frameworks */,
+				54694C841335E669002627E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54694C841335E669002627E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54694C831335E669002627E3 /* SpaceAdventure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54694C861335E669002627E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54694C871335E669002627E3 /* UIKit.framework */,
+				54694C891335E669002627E3 /* Foundation.framework */,
+				54694C8B1335E669002627E3 /* CoreGraphics.framework */,
+				54694C8D1335E669002627E3 /* QuartzCore.framework */,
+				54694C8F1335E669002627E3 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54694C911335E66A002627E3 /* SpaceAdventure */ = {
+			isa = PBXGroup;
+			children = (
+				54694C9A1335E66A002627E3 /* SpaceAdventureAppDelegate.h */,
+				54694C9B1335E66A002627E3 /* SpaceAdventureAppDelegate.m */,
+				54694C9D1335E66A002627E3 /* MainWindow.xib */,
+				54694CA01335E66A002627E3 /* Shader.fsh */,
+				54694CA21335E66A002627E3 /* Shader.vsh */,
+				54694CA41335E66A002627E3 /* EAGLView.h */,
+				54694CA51335E66A002627E3 /* EAGLView.m */,
+				54694CA71335E66A002627E3 /* SpaceAdventureViewController.h */,
+				54694CA81335E66A002627E3 /* SpaceAdventureViewController.m */,
+				54694CAA1335E66A002627E3 /* SpaceAdventureViewController.xib */,
+				54694C921335E66A002627E3 /* Supporting Files */,
+			);
+			path = SpaceAdventure;
+			sourceTree = "<group>";
+		};
+		54694C921335E66A002627E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54694C931335E66A002627E3 /* SpaceAdventure-Info.plist */,
+				54694C941335E66A002627E3 /* InfoPlist.strings */,
+				54694C971335E66A002627E3 /* SpaceAdventure-Prefix.pch */,
+				54694C981335E66A002627E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54694C821335E669002627E3 /* SpaceAdventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54694CAF1335E66A002627E3 /* Build configuration list for PBXNativeTarget "SpaceAdventure" */;
+			buildPhases = (
+				54694C7F1335E669002627E3 /* Sources */,
+				54694C801335E669002627E3 /* Frameworks */,
+				54694C811335E669002627E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceAdventure;
+			productName = SpaceAdventure;
+			productReference = 54694C831335E669002627E3 /* SpaceAdventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54694C7A1335E669002627E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Bludger;
+			};
+			buildConfigurationList = 54694C7D1335E669002627E3 /* Build configuration list for PBXProject "SpaceAdventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54694C781335E669002627E3;
+			productRefGroup = 54694C841335E669002627E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54694C821335E669002627E3 /* SpaceAdventure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54694C811335E669002627E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54694C961335E66A002627E3 /* InfoPlist.strings in Resources */,
+				54694C9F1335E66A002627E3 /* MainWindow.xib in Resources */,
+				54694CA11335E66A002627E3 /* Shader.fsh in Resources */,
+				54694CA31335E66A002627E3 /* Shader.vsh in Resources */,
+				54694CAC1335E66A002627E3 /* SpaceAdventureViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54694C7F1335E669002627E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54694C991335E66A002627E3 /* main.m in Sources */,
+				54694C9C1335E66A002627E3 /* SpaceAdventureAppDelegate.m in Sources */,
+				54694CA61335E66A002627E3 /* EAGLView.m in Sources */,
+				54694CA91335E66A002627E3 /* SpaceAdventureViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54694C941335E66A002627E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54694C951335E66A002627E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54694C9D1335E66A002627E3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54694C9E1335E66A002627E3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		54694CAA1335E66A002627E3 /* SpaceAdventureViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54694CAB1335E66A002627E3 /* en */,
+			);
+			name = SpaceAdventureViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54694CAD1335E66A002627E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		54694CAE1335E66A002627E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		54694CB01335E66A002627E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceAdventure/SpaceAdventure-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "SpaceAdventure/SpaceAdventure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54694CB11335E66A002627E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceAdventure/SpaceAdventure-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "SpaceAdventure/SpaceAdventure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54694C7D1335E669002627E3 /* Build configuration list for PBXProject "SpaceAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54694CAD1335E66A002627E3 /* Debug */,
+				54694CAE1335E66A002627E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54694CAF1335E66A002627E3 /* Build configuration list for PBXNativeTarget "SpaceAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54694CB01335E66A002627E3 /* Debug */,
+				54694CB11335E66A002627E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54694C7A1335E669002627E3 /* Project object */;
+}
